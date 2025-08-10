@@ -121,6 +121,13 @@ body {
   font-size: 0;
 }
 
+.bench-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 60px 80px;
+  font-size: 0;
+}
+
 .results-carousel video {
   margin: 0;
 }
@@ -133,5 +140,155 @@ body {
   font-size: smaller;
 }
 
+.gradient-text {
+  background: linear-gradient(90deg, #ff721a, #500400); /* 左到右渐变色 */
+  -webkit-background-clip: text;  /* Chrome / Safari */
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;           /* 标准属性 */
+  color: transparent;              /* 兼容性处理 */
+  font-weight: bold;                /* 让渐变更显眼 */
+}
+
+.carousel-section .hero-body {
+  background-color: rgba(255, 255, 255, 0); 
+}
+
+.carousel-section video {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.carousel_title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.carousel-section {
+  background:
+    /* 上下渐变淡出 */
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    /* 半透明覆盖 */
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    /* 背景图片 */
+    url('../images/household_background.png');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% center; 
+  transition: background-position 0.7s ease-in-out; 
+}
 
 
+.household-section {
+  background: 
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('../images/household_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% center;
+}
+
+.service-section {
+  background: 
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('../images/service_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% center;
+}
+
+.outdoor-section {
+  background: 
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('../images/outdoor_background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% center;
+}
+
+.benchmark-section {
+  background: 
+    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('../images/map_background_0.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 1% center;
+}
+
+.glow-text {
+  color: white;
+  text-shadow:
+    0 0 5px #ff6600,
+    0 0 10px #ff6600,
+    0 0 20px #ff6600;
+}
+
+.highlight-title {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* ================================================== */
+/*  Custom SVG Navigation for Benchmark Carousel      */
+/* ================================================== */
+
+/* 1. 隐藏原始的导航点样式 */
+#benchmark-carousel .slider-pagination .slider-page {
+  background: transparent; /* 移除背景色 */
+  border: none;            /* 移除可能存在的边框 */
+  font-size: 0;            /* 隐藏内部的数字 */
+  width: 40px;             /* 设置点击区域的宽度 */
+  height: 40px;            /* 设置点击区域的高度 */
+  
+  /* 统一定义背景图的属性 */
+  background-size: 70%;    /* SVG 大小为其容器的 70% */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* 2. 设置默认（未选中）状态的样式 */
+  filter: grayscale(100%) opacity(50%); /* 变灰且半透明 */
+  transition: all 0.3s ease-in-out;    /* 平滑过渡效果 */
+  cursor: pointer;
+}
+
+/* 3. 设置当前活动（选中）状态的样式 */
+#benchmark-carousel .slider-pagination .slider-page.is-active {
+  filter: grayscale(0) opacity(100%);     /* 恢复原色且不透明 */
+  transform: scale(1.15);                /* 轻微放大，突出显示 */
+}
+
+/* 4. 为每个导航点分别指定 SVG 图标 */
+/* 注意：请确保下面的路径相对于你的 CSS 文件是正确的！*/
+/* 假设 index.css 在 static/css/ 目录下，图标在 static/icons/ 目录下 */
+
+#benchmark-carousel .slider-pagination .slider-page:nth-child(1) {
+  background-image: url('../icons/benchmark-icon-1.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(2) {
+  background-image: url('../icons/benchmark-icon-2.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(3) {
+  background-image: url('../icons/benchmark-icon-3.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(4) {
+  background-image: url('../icons/benchmark-icon-4.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(5) {
+  background-image: url('../icons/benchmark-icon-5.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(6) {
+  background-image: url('../icons/benchmark-icon-6.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(7) {
+  background-image: url('../icons/benchmark-icon-7.svg'); 
+}
+#benchmark-carousel .slider-pagination .slider-page:nth-child(8) {
+  background-image: url('../icons/benchmark-icon-8.svg'); 
+}

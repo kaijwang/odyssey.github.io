@@ -53,7 +53,7 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
               <img src="static/images/icon_full.png" alt="ODYSSEY icon" style="height: 1.5em;">
-              ODYSSEY: Open-World Quadrupeds<br>Explorationand Manipulation for Long-Horizon Tasks
+              <span class="gradient-text">ODYSSEY</span> : Open-World Quadrupeds<br>Explorationand Manipulation for Long-Horizon Tasks
             </h1>
   
             <div class="is-size-5 publication-authors">
@@ -73,7 +73,8 @@
   
             <div class="is-size-6 publication-authors">
               <span class="author-block"><sup>1</sup>Zhejiang University.</span><br>
-              <span class="author-block"><sup>2</sup>Zhejiang University of Technology.</span>
+              <span class="author-block"><sup>2</sup>Zhejiang University of Technology.</span><br>
+              <span class="author-block"><sup>*</sup>equal contribution</span>
             </div>
   
             <div class="column has-text-centered">
@@ -141,11 +142,10 @@
   </section>
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -154,19 +154,36 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<!-- Teaser Figure-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="content has-text-centered" style="max-width: 90%;">
+          <img src="static/images/overview.jpg">
+          <p class="has-text-grey">
+            <strong class="gradient-text">ODYSSEY</strong>, a unified mobile manipulation framework for agile quadruped robots equipped with manipulators, which seamlessly integrates high-level task planning with low-level whole-body control.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser figure -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Language-guided long-horizon mobile manipulation has long been a grand challenge in embodied semantic reasoning, generalizable manipulation, and adaptive locomotion. Three fundamental limitations hinder progress: First, although large language models have shown promise in enhancing spatial reasoning and task planning through learned semantic priors, existing implementations remain confined to tabletop scenarios, failing to address the constrained perception and limited actuation ranges characteristic of mobile platforms. Second, current manipulation strategies exhibit insufficient generalization when confronted with the diverse object configurations encountered in open-world environments. Third, while crucial for practical deployment, the dual requirement of maintaining high platform maneuverability alongside precise end-effector control in unstructured settings remains understudied in the literature. <br>
-            In this work, we present ODYSSEY, a unified mobile manipulation framework for agile quadruped robots equipped with manipulators, which seamlessly integrates high-level task planning with low-level whole-body control. To address the challenge of egocentric perception in language-conditioned tasks, we introduce a hierarchical planner powered by a vision-language model, enabling long-horizon instruction decomposition and precise action execution. At the control level, our novel whole-body policy achieves robust coordination of locomotion and manipulation across challenging terrains. We further present the first comprehensive benchmark for long-horizon mobile manipulation, evaluating diverse indoor and outdoor scenarios. Through successful sim-to-real transfer, we demonstrate the system's generalization and robustness in real-world deployments, underscoring the practicality of legged manipulators in unstructured environments. Our work advances the feasibility of generalized robotic assistants capable of complex, dynamic tasks.
+            Language-guided long-horizon mobile manipulation has long been a grand challenge in <strong>semantic reasoning</strong>, <strong>generalizable manipulation</strong>, and <strong>adaptive locomotion</strong>. Three fundamental limitations hinder progress: First, although large language models have shown promise in enhancing spatial reasoning and task planning through learned semantic priors, existing implementations remain confined to tabletop scenarios, failing to address the constrained perception and limited actuation ranges characteristic of mobile platforms. Second, current manipulation strategies exhibit insufficient generalization when confronted with the diverse object configurations encountered in open-world environments. Third, while crucial for practical deployment, the dual requirement of maintaining high platform maneuverability alongside precise end-effector control in unstructured settings remains understudied in the literature. <br>
+            In this work, we present <strong class="gradient-text">ODYSSEY</strong>, <strong>a unified mobile manipulation framework for agile quadruped robots equipped with manipulators</strong>, which seamlessly integrates <strong>high-level task planning</strong> with <strong>low-level whole-body control</strong>. To address the challenge of egocentric perception in language-conditioned tasks, we introduce a hierarchical planner powered by a vision-language model, enabling long-horizon instruction decomposition and precise action execution. At the control level, our novel whole-body policy achieves robust coordination of locomotion and manipulation across challenging terrains. We further present <strong>the first comprehensive benchmark for long-horizon mobile manipulation</strong>, evaluating diverse indoor and outdoor scenarios. Through successful sim-to-real transfer, we demonstrate the system's generalization and robustness in real-world deployments, underscoring the practicality of legged manipulators in unstructured environments. Our work advances the feasibility of generalized robotic assistants capable of complex, dynamic tasks.
           </p>
         </div>
       </div>
@@ -175,122 +192,215 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY</span>-Preview DEMO</h2>
+        <div class="content">
+          <p>
+          Our proposed <span class="gradient-text">ODYSSEY</span> system empowers quadruped robots 🐾 to excel in diverse environments
+           — from <strong>household chores</strong> 🏠 and <strong>services</strong> 🍽️ to <strong>outdoor maintenance</strong> 🌿. 
+           Acting as butlers, waiters, gardeners, and more, these versatile robot assistants bring intelligence and agility to every task 🤖✨.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
+<!-- Household carousel -->
+<section class="hero is-small carousel-section household-section">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <h1 class="title is-2 highlight-title" style="margin-bottom: 0; text-align: left; color: #707070;">
+        <img src="static/images/household.svg" style="height: 1.5em;">
+        Household</h1>
+      <div id="household-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Household carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- Service carousel -->
+<section class="hero is-small carousel-section service-section">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/service.svg" style="height: 1.5em;">
+        &nbsp;Service</h1>
+      <div id="service-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+<!-- End Service carousel -->
 
+<!-- Outdoor carousel -->
+<section class="hero is-small carousel-section outdoor-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/yard.svg" style="height: 1.5em;">
+        &nbsp;Outdoor</h1>
+      <div id="outdoor-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Outdoor carousel -->
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY</span>-Mobile Planner</h2>
+        <div class="content">
+          <p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method Figure-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="content has-text-centered" style="max-width: 90%;">
+          <img src="static/images/method.png">
+          <p class="has-text-grey">
+          <span class="gradient-text">ODYSSEY</span>
+          pipeline spans the entire process of a <strong>long-horizon</strong> task, including multi-modal semantic perception, 
+          <strong>map-aware</strong> global planning, <strong>geometry-constrained</strong> action grounding, and step-wise execution by a reinforced learned low-level <strong>whole-body policy</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method figure -->
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY</span>-Benchmark</h2>
+        <div class="content">
+          <p>
+          <span class="gradient-text">ODYSSEY</span> Benchmark is the first simulation platform designed for long-horizon mobile manipulation which highlights the following major points: 
+          (1) The benchmark includes eight multi-stage tasks designed to evaluate the full pipeline of embodied mobile manipulation, covering perception, planning, navigation, and manipulation. 
+          (2) Each task consists of 2-3 subgoals with diverse object types, spatial layouts, and physical interaction modes to reflect realistic and complex scenarios. 
+          (3) ODYSSEY spans both indoor and outdoor environments, featuring over 300 task variations and numerous unique assets to ensure robust generalization. 
+          (4) Detailed task configurations enable comprehensive benchmarking of system performance across a wide range of practical challenges.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benchmark carousel -->
+<section class="hero is-small carousel-section benchmark-section">
+  <div class="hero-body">
+    <div class="container">
+      <div id="benchmark-carousel" class="carousel bench-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video6">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video7">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video8">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Benchmark carousel -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -326,5 +436,104 @@
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // 1. 定义背景位置（这个可以被所有轮播共用）
+  const backgroundPositions = [
+    '0% center',   // Index 0
+    '50% center',  // Index 1
+    '100% center'  // Index 2
+    // 如果某个轮播有更多视频，可以继续添加
+  ];
+
+  // 2. 找到页面上所有的轮播组件
+  const allCarousels = document.querySelectorAll('.results-carousel');
+
+  // 3. 遍历并为每一个轮播组件独立初始化
+  allCarousels.forEach(carouselElement => {
+    
+    // 初始化 Bulma Carousel，注意这里用的是循环中的 carouselElement
+    const carouselInstance = bulmaCarousel.attach(`#${carouselElement.id}`, {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+    });
+
+    // 找到当前轮播自己的父级 <section>
+    const carouselSection = carouselElement.closest('.carousel-section');
+
+    // 确保找到了 section 和 carousel 实例
+    if (carouselInstance.length > 0 && carouselSection) {
+      
+      // 4. 为当前这个轮播实例绑定事件
+      carouselInstance[0].on('after:show', function(event) {
+        
+        // 使用 event.index 获取当前索引 (根据您的经验，event.index 是正确的)
+        const currentIndex = event.next;
+        const newPosition = backgroundPositions[currentIndex];
+
+        if (newPosition) {
+          console.log(`Carousel #${carouselElement.id} 切换到索引 ${currentIndex}, 背景位置变为: ${newPosition}`);
+          // 只修改当前这个轮播所在的 section 的背景
+          carouselSection.style.backgroundPosition = newPosition;
+        }
+      });
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // 1. 定义背景位置（这个可以被所有轮播共用）
+  const backgroundPositions = [
+    '1% center',   // Index 0
+    '15% center',  // Index 1
+    '29% center',  // Index 2
+    '43% center',  // Index 3
+    '57% center',  // Index 4
+    '71% center',  // Index 5
+    '85% center',  // Index 6
+    '99% center'  // Index 7
+    // 如果某个轮播有更多视频，可以继续添加
+  ];
+
+  // 2. 找到页面上所有的轮播组件
+  const allCarousels = document.querySelectorAll('.bench-carousel');
+
+  // 3. 遍历并为每一个轮播组件独立初始化
+  allCarousels.forEach(carouselElement => {
+    
+    // 初始化 Bulma Carousel，注意这里用的是循环中的 carouselElement
+    const carouselInstance = bulmaCarousel.attach(`#${carouselElement.id}`, {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+    });
+
+    // 找到当前轮播自己的父级 <section>
+    const carouselSection = carouselElement.closest('.carousel-section');
+
+    // 确保找到了 section 和 carousel 实例
+    if (carouselInstance.length > 0 && carouselSection) {
+      
+      // 4. 为当前这个轮播实例绑定事件
+      carouselInstance[0].on('after:show', function(event) {
+        
+        // 使用 event.index 获取当前索引 (根据您的经验，event.index 是正确的)
+        const currentIndex = event.next;
+        const newPosition = backgroundPositions[currentIndex];
+
+        if (newPosition) {
+          console.log(`Carousel #${carouselElement.id} 切换到索引 ${currentIndex}, 背景位置变为: ${newPosition}`);
+          // 只修改当前这个轮播所在的 section 的背景
+          carouselSection.style.backgroundPosition = newPosition;
+        }
+      });
+    }
+  });
+});
+</script>
+
+</body>
+ </html>
