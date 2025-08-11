@@ -45,134 +45,119 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-  <section class="hero">
-    <div class="hero-body">
+  <section class="hero is-fullheight">
+    <div class="hero-body blur">
       <div class="container is-fullhd">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">
-              <img src="static/images/icon_full.png" alt="ODYSSEY icon" style="height: 1.5em;">
-              <span class="gradient-text">ODYSSEY</span> : Open-World Quadrupeds<br>Explorationand Manipulation for Long-Horizon Tasks
-            </h1>
   
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="">Kaijun Wang</a><sup>1*</sup>,
-              </span>
-              <span class="author-block">
-                <a href="">Liqin Lu</a><sup>2*</sup>,
-              </span>
-              <span class="author-block">
-                <a href="">Hao Chen</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="">Chunhua Shen</a><sup>1</sup>,
-              </span>
-            </div>
-  
-            <div class="is-size-6 publication-authors">
-              <span class="author-block"><sup>1</sup>Zhejiang University.</span><br>
-              <span class="author-block"><sup>2</sup>Zhejiang University of Technology.</span><br>
-              <span class="author-block"><sup>*</sup>equal contribution</span>
-            </div>
-  
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- PDF Link. -->
-                <!-- <span class="link-block">
-                  <a target="_blank" href="omnimanip.pdf"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span> -->
-  
-              <!-- Arxiv Link. -->
-              <span class="link-block">
-                <a target="_blank" href="https://arxiv.org/abs/2501.03841"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+            <!-- Start: Wrapper for semi-transparent background -->
+            <div class="content-box">
+              <!-- <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 8rem;">
+                <img src="static/images/icon_full.png" alt="ODYSSEY icon" style="height: 1.5em;">
+                <span class="gradient-text">ODYSSEY &nbsp;</span>
+              </h1>
+              <h1 class="title is-1 publication-title is-size-1-mobile">
+                Open-World Quadrupeds Exploration and <br>
+                Manipulation for Long-Horizon Tasks
+              </h1> -->
+
+              <div class="title-animation-container">
+                <h1 id="main-title" class="title is-1 publication-title is-size-1-mobile" style="font-size: 8rem;">
+                  <!-- <img src="static/images/icon_full.gif" alt="ODYSSEY icon" style="height: 1.5em; vertical-align: middle;"> -->
+                  <img src="static/images/icon_full.png" alt="ODYSSEY icon" style="height: 1.5em;">
+                  <span class="gradient-text"><span id="typing-text"></span></span>
+                </h1>
+                <h1 id="subtitle" class="title is-1 publication-title is-size-1-mobile" style="font-size: 4rem;">
+                  Open-World Quadrupeds Exploration and <br>
+                  Manipulation for Long-Horizon Tasks
+                </h1>
+              </div>
+    
+              <div class="is-size-4 publication-authors">
+                <span class="author-block">
+                  <a href="">Kaijun Wang</a><sup>1*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Liqin Lu</a><sup>2*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Mingyu Liu</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Jianuo Jiang</a><sup>3</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Zeju Li</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Bolin Zhang</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Wancai Zheng</a><sup>2</sup>,
+                </span>
+                <br>
+                <span class="author-block">
+                  <a href="">Xinyi Yu</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Hao Chen</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="">Chunhua Shen</a><sup>1</sup>
+                </span>
+              </div>
+    
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Zhejiang University.</span><br>
+                <span class="author-block"><sup>2</sup>Zhejiang University of Technology.</span><br>
+                <span class="author-block"><sup>3</sup>The Chinese University of Hongkong, Shenzhen.</span><br>
+                <span class="author-block"><sup>*</sup>equal contribution</span>
+              </div>
+    
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <!-- ... (links are unchanged) ... -->
+                  <!-- Arxiv Link. -->
+                  <span class="link-block">
+                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>ArXiv</span>
+                    </a>
                   </span>
-                  <span>ArXiv</span>
-                </a>
-              </span>
-  
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a target="_blank" href="https://omnimanip.github.io"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
+      
+                  <!-- Video Link. -->
+                  <span class="link-block">
+                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
                   </span>
-                  <span>Video</span>
-                </a>
-              </span>
-  
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a target="_blank" href="https://github.com/pmj110119/OmniManip"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
+      
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code(Coming soon)</span>
+                      </a>
                   </span>
-                  <span>Code(Coming soon)</span>
-                  </a>
-              </span>
-  
-              <!-- Simulator Benchmark Link. -->
-              <!-- <span class="link-block">
-                <a target="_blank" href="https://omnimanip.github.io"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Benchmark(Coming)</span>
-                  </a>
-              </span> -->
+                </div>
               </div>
             </div>
+            <!-- End: Wrapper for semi-transparent background -->
+  
           </div>
         </div>
       </div>
     </div>
   </section>
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
-<!-- Teaser Figure-->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="content has-text-centered" style="max-width: 90%;">
-          <img src="static/images/overview.jpg">
-          <p class="has-text-grey">
-            <strong class="gradient-text">ODYSSEY</strong>, a unified mobile manipulation framework for agile quadruped robots equipped with manipulators, which seamlessly integrates high-level task planning with low-level whole-body control.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End teaser figure -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -197,7 +182,7 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
 
-        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY</span>-Preview DEMO</h2>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY&nbsp;</span>Preview DEMO</h2>
         <div class="content">
           <p>
           Our proposed <span class="gradient-text">ODYSSEY</span> system empowers quadruped robots 🐾 to excel in diverse environments
@@ -220,17 +205,17 @@
       <div id="household-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/demo/household_0.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/demo/household_1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/household_2.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -249,17 +234,17 @@
       <div id="service-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/demo/service_1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/demo/service_0.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/service_2.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -278,17 +263,17 @@
       <div id="outdoor-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/demo/outdoor_0.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/demo/outdoor_1.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/outdoor_2.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -302,7 +287,7 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
 
-        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY</span>-Mobile Planner</h2>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY&nbsp;</span>Mobile Planner</h2>
         <div class="content">
           <p>
 
@@ -336,7 +321,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column">
-        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY</span>-Benchmark</h2>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY&nbsp;</span>Benchmark</h2>
         <div class="content">
           <p>
           <span class="gradient-text">ODYSSEY</span> Benchmark is the first simulation platform designed for long-horizon mobile manipulation which highlights the following major points: 
@@ -358,42 +343,42 @@
       <div id="benchmark-carousel" class="carousel bench-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
+            <source src="static/videos/demo/indoorcollect.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
+            <source src="static/videos/demo/roomnavigate.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/cartdelivery.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video4">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/cabinetstorage.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video5">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/shopping.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video6">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/restocking.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video7">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/outdoorcollect.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video8">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+            <source src="static/videos/demo/outdoordelivery.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -401,6 +386,51 @@
   </div>
 </section>
 <!-- End Benchmark carousel -->
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-1 has-text-centered is-size-4-mobile">Real-world Deployment</h2>
+        <div class="content has-text-centered">
+          <!-- START: New two-column layout for media -->
+          <div class="columns is-vcentered">
+
+            <!-- Column 1: Image on the left -->
+            <div class="column is-two-fifths">
+              <figure class="image">
+                <!-- 替换为你自己的图片路径 -->
+                <img src="static/images/real.png" alt="ODYSSEY robot in action">
+              </figure>
+            </div>
+
+            <!-- Column 2: Video on the right -->
+            <div class="column is-third-fifths">
+              <figure class="image">
+                <!-- 
+                  autoplay, muted, loop 是推荐的属性组合，用于背景/演示视频
+                  - autoplay: 自动播放
+                  - muted: 静音 (大多数浏览器要求静音才能自动播放)
+                  - loop: 循环播放
+                  - playsinline: 在移动设备上内联播放，而不是全屏
+                -->
+                <video playsinline autoplay muted loop>
+                  <!-- 替换为你自己的视频路径 -->
+                  <source src="static/videos/demo/real.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </figure>
+            </div>
+
+          </div>
+          <!-- END: New two-column layout -->
+          <p class="has-text-grey"><span class="gradient-text">ODYSSEY</span> robot system and real-world experiments</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -534,6 +564,73 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  
+    // --- 配置项 ---
+    const typingTextElement = document.getElementById('typing-text');
+    const mainTitleElement = document.getElementById('main-title');
+    const subtitleElement = document.getElementById('subtitle');
+  
+    const textToType = "ODYSSEY  ";
+    const typeSpeed = 150; // 打字速度 (ms)
+    const pauseAfterTyping = 2000; // 打完字后的停留时间
+    const pauseOnSubtitle = 4000; // 副标题显示时间
+    const transitionDuration = 800; // 淡入淡出动画的持续时间 (应与CSS中的 transition 一致)
+  
+    // --- 动画函数 ---
+  
+    // 1. 模拟等待的函数
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+  
+    // 2. 打字函数
+    async function typeText() {
+      // 重置文本内容
+      typingTextElement.textContent = '';
+      // 开始打字
+      for (let i = 0; i < textToType.length; i++) {
+        typingTextElement.textContent += textToType.charAt(i);
+        await sleep(typeSpeed);
+      }
+    }
+  
+    // --- 主循环 ---
+    async function animationLoop() {
+      while (true) {
+        // **阶段 1: 打出并显示主标题**
+        // 显示主标题容器，但不显示光标动画
+        mainTitleElement.style.opacity = 1;
+        await typeText(); // 执行打字动画
+        
+        // 打字完成后，让光标消失
+        typingTextElement.style.setProperty('--blink-display', 'none');
+        if(typingTextElement.style.getPropertyValue('--blink-display') === 'none'){
+          const cursor = typingTextElement.parentElement.querySelector('span::after');
+          if(cursor) cursor.style.display = 'none';
+        }
+  
+        await sleep(pauseAfterTyping);
+  
+        // **阶段 2: 主标题淡出，副标题淡入**
+        mainTitleElement.style.opacity = 0;
+        subtitleElement.style.opacity = 1;
+  
+        // 等待副标题显示一段时间
+        await sleep(pauseOnSubtitle);
+  
+        // **阶段 3: 副标题淡出，为下一次循环做准备**
+        subtitleElement.style.opacity = 0;
+        
+        // 等待淡出动画完成
+        await sleep(transitionDuration);
+      }
+    }
+    
+    // 启动动画
+    animationLoop();
+  });
+  </script>
 
 </body>
  </html>

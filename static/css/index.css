@@ -292,3 +292,93 @@ body {
 #benchmark-carousel .slider-pagination .slider-page:nth-child(8) {
   background-image: url('../icons/benchmark-icon-8.svg'); 
 }
+
+
+/* 1. 设置 Hero 部分的背景图 */
+.hero.is-fullheight {
+  /* 替换为你自己的背景图片路径 */
+  background-image: url('../images/cover.png'); 
+  
+  /* 确保图片覆盖整个区域，不重复，并居中显示 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-body.blur{
+  /* 关键：设置半透明的白色背景，这将覆盖在父元素 .hero 的背景图之上 */
+  background-color: rgba(255, 255, 255, 0.5); /* 0.5 代表 50% 透明度 */
+
+  /* (可选) 添加毛玻璃效果，模糊背景图，让文字更突出 */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+/* 2. 设置内容框的样式 */
+/* .content-box {
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  max-width: 90%;
+} */
+
+/* 确保链接按钮在深色和浅色背景下都可见
+.publication-links .button.is-dark {
+    background-color: #363636;
+    border-color: transparent;
+    color: #fff;
+}
+.publication-links .button.is-dark:hover {
+    background-color: #222;
+} */
+
+/* 容器样式，确保标题居中且不会因动画跳动 */
+.title-animation-container {
+  /* 设置一个最小高度，防止在标题切换时页面布局跳动 */
+  min-height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 默认隐藏副标题，并为它的淡入淡出添加过渡效果 */
+#subtitle {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  /* 确保它在主标题消失后才出现，位置固定 */
+  position: absolute;
+}
+
+/* 主标题默认可见 */
+#main-title {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* 关键：打字效果的光标 */
+#typing-text::after {
+  content: '▋'; /* 你可以用 | 或者 _ 等其他字符 */
+  display: inline-block;
+  margin-left: 0.15em;
+  color: #363636; /* 光标颜色 */
+  /* 闪烁动画 */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 辅助 class，用于 JS 控制显示/隐藏 */
+.is-hidden {
+  opacity: 0 !important;
+}
