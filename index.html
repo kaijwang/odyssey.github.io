@@ -76,35 +76,35 @@
     
               <div class="is-size-4 publication-authors">
                 <span class="author-block">
-                  <a href="">Kaijun Wang</a><sup>1*</sup>,
+                  Kaijun Wang<sup>1*</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="">Liqin Lu</a><sup>2*</sup>,
+                  Liqin Lu<sup>2*</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="">Mingyu Liu</a><sup>1</sup>,
+                  <a href="https://mingyulau.github.io/">Mingyu Liu</a><sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="">Jianuo Jiang</a><sup>3</sup>,
+                  Jianuo Jiang<sup>3</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="">Zeju Li</a><sup>1</sup>,
+                  Zeju Li<sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="">Bolin Zhang</a><sup>1</sup>,
+                  Bolin Zhang<sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="">Wancai Zheng</a><sup>2</sup>,
+                  Wancai Zheng<sup>2</sup>,
                 </span>
                 <br>
                 <span class="author-block">
-                  <a href="">Xinyi Yu</a><sup>2</sup>,
+                  Xinyi Yu<sup>2</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="">Hao Chen</a><sup>1</sup>,
+                  <a href="https://scholar.google.com/citations?hl=en&user=FaOqRpcAAAAJ&view_op=list_works">Hao Chen</a><sup>1</sup>,
                 </span>
                 <span class="author-block">
-                  <a href="">Chunhua Shen</a><sup>1</sup>
+                  <a href="https://cshen.github.io/">Chunhua Shen</a><sup>1</sup>
                 </span>
               </div>
     
@@ -121,7 +121,7 @@
                   <!-- ... (links are unchanged) ... -->
                   <!-- Arxiv Link. -->
                   <span class="link-block">
-                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                    <a target="_blank" href="https://arxiv.org/abs/2508.08240" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                       </span>
@@ -325,7 +325,7 @@
         <div class="content">
           <p>
           <span class="gradient-text">ODYSSEY</span> Benchmark is the first simulation platform designed for long-horizon mobile manipulation which highlights the following major points: 
-          (1) The benchmark includes eight multi-stage tasks designed to evaluate the full pipeline of embodied mobile manipulation, covering perception, planning, navigation, and manipulation. 
+          (1) The benchmark includes <strong>8 multi-stage tasks</strong> designed to evaluate the full pipeline of embodied mobile manipulation, covering perception, planning, navigation, and manipulation. 
           (2) Each task consists of 2-3 subgoals with diverse object types, spatial layouts, and physical interaction modes to reflect realistic and complex scenarios. 
           (3) ODYSSEY spans both indoor and outdoor environments, featuring over 300 task variations and numerous unique assets to ensure robust generalization. 
           (4) Detailed task configurations enable comprehensive benchmarking of system performance across a wide range of practical challenges.
@@ -415,7 +415,6 @@
                   - playsinline: 在移动设备上内联播放，而不是全屏
                 -->
                 <video playsinline autoplay muted loop>
-                  <!-- 替换为你自己的视频路径 -->
                   <source src="static/videos/demo/real.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -517,14 +516,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 1. 定义背景位置（这个可以被所有轮播共用）
   const backgroundPositions = [
-    '1% center',   // Index 0
-    '15% center',  // Index 1
-    '29% center',  // Index 2
-    '43% center',  // Index 3
-    '57% center',  // Index 4
-    '71% center',  // Index 5
-    '85% center',  // Index 6
-    '99% center'  // Index 7
+    '2% center',   // Index 0
+    '18% center',  // Index 1
+    '34% center',  // Index 2
+    '50% center',  // Index 3
+    '66% center',  // Index 4
+    '82% center',  // Index 5
+    '96% center',  // Index 6
     // 如果某个轮播有更多视频，可以继续添加
   ];
 
@@ -537,7 +535,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 初始化 Bulma Carousel，注意这里用的是循环中的 carouselElement
     const carouselInstance = bulmaCarousel.attach(`#${carouselElement.id}`, {
       slidesToScroll: 1,
-      slidesToShow: 1,
+      slidesToShow: 2,
       loop: true,
     });
 

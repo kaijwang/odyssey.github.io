@@ -124,7 +124,7 @@ body {
 .bench-carousel .item {
   margin: 5px;
   overflow: hidden;
-  padding: 60px 80px;
+  padding: 60px 20px;
   font-size: 0;
 }
 
