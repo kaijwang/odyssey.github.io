@@ -387,6 +387,38 @@
 </section>
 <!-- End Benchmark carousel -->
 
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <!-- START: New two-column layout for media -->
+          <div class="columns is-vcentered is-align-items-end">
+            <!-- Column 2: Video on the right -->
+            <div class="column is-third-fifths">
+              <figure class="image">
+                <video playsinline autoplay muted loop>
+                  <source src="static/images/assets.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p>Versatile object configurations in <span class="gradient-text">ODYSSEY</span> benchmark.</p>
+              </figure>
+            </div>
+            <!-- Column 1: Image on the left -->
+            <div class="column is-two-fifths">
+              <figure class="image" style="margin-bottom: 0;">
+                <img src="static/images/bench_table.jpg">
+              </figure>
+              <p>Variation counts, and asset usage per task.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section is-small" id="umi">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -394,36 +426,27 @@
         <h2 class="title is-1 has-text-centered is-size-4-mobile">Real-world Deployment</h2>
         <div class="content has-text-centered">
           <!-- START: New two-column layout for media -->
-          <div class="columns is-vcentered">
+          <div class="columns is-vcentered is-align-items-end">
 
             <!-- Column 1: Image on the left -->
             <div class="column is-two-fifths">
-              <figure class="image">
-                <!-- 替换为你自己的图片路径 -->
+              <figure class="image" style="margin-bottom: 0;">
                 <img src="static/images/real.png" alt="ODYSSEY robot in action">
               </figure>
+              <span class="gradient-text">ODYSSEY</span> robot system
             </div>
 
             <!-- Column 2: Video on the right -->
             <div class="column is-third-fifths">
               <figure class="image">
-                <!-- 
-                  autoplay, muted, loop 是推荐的属性组合，用于背景/演示视频
-                  - autoplay: 自动播放
-                  - muted: 静音 (大多数浏览器要求静音才能自动播放)
-                  - loop: 循环播放
-                  - playsinline: 在移动设备上内联播放，而不是全屏
-                -->
                 <video playsinline autoplay muted loop>
                   <source src="static/videos/demo/real.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
+                <p>Real-world experiments.</p>
               </figure>
             </div>
-
           </div>
-          <!-- END: New two-column layout -->
-          <p class="has-text-grey"><span class="gradient-text">ODYSSEY</span> robot system and real-world experiments</p>
         </div>
       </div>
     </div>
@@ -522,7 +545,7 @@ document.addEventListener('DOMContentLoaded', function() {
     '50% center',  // Index 3
     '66% center',  // Index 4
     '82% center',  // Index 5
-    '96% center',  // Index 6
+    '98% center',  // Index 6
     // 如果某个轮播有更多视频，可以继续添加
   ];
 
